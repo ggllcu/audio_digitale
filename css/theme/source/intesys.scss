@@ -12,26 +12,48 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-
-
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,600);
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,600,400italic,600italic);
-@import url(https://fonts.googleapis.com/css?family=Fira+Code:500);
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 // Override theme settings (see ../template/settings.scss)
 $mainFontSize: 24px;
-$mainFont: 'Fira Sans', sans-serif;
+$mainFont: 'Work Sans', sans-serif;
 $mainColor: #000;
-$headingFont: 'Fira Sans', Impact, sans-serif;
+$headingFont: 'Work Sans', Impact, sans-serif;
 $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #0f33ce;
+$linkColor: #8659F1;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+$primaryColor: #8659F1;
+$secondaryColor: #17FDB4;
+
+
+.reveal {
+    .icon {
+        width: 100px;
+        height: auto;
+    }
+
+    .intro {
+        img {
+            max-width: 350px;
+        }
+    }
+
+    .section-title {
+        background: linear-gradient(45deg, rgba(23,253,180,1) 0%, rgba(134,89,241,1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .progress {
+        height: 5px !important;
+        margin-bottom: 0 !important;    
+    }
+}
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
