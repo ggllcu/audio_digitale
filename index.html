@@ -6,11 +6,9 @@
 
 		<title>IntesysTalk | Audio digitale pro e contro</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
+		<!-- <link rel="stylesheet" href="dist/reset.css"> -->
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/intesys.css" id="theme">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -30,6 +28,7 @@
 				</section>
 
 				<section>
+					<h2>Facciamo chiarezza</h2>
 					<ul>
 						<li>Analogico vs digitale</li>
 						<li>Vinile vs cd</li>
@@ -38,24 +37,26 @@
 				</section>
 
 				<section>
+					<h2>Segnale sonoro reale</h2>
 					<div class="columns">
 						<div class="column">
-							<p>
-								Segnale sonoro reale
-							</p>
+							<img src="./img/onda_sonora.gif" alt="">
 						</div>
-					</div>
+				</section>
+
+				<section>
+					<h2>Rappresentazione di un segnale</h2>
 					<div class="columns">
-						<div class="column">
+						<div class="column fragment">
 							<img src="./img/analogic.png" alt="">
 							Segnale analogico: rappresentazione di segnale per analogia, a tempo continuo e ad ampiezza continua
 						</div>
-						<div class="column">
+						<div class="column fragment">
 							<img src="./img/digital.png" alt="">
 							Segnale digitale o numerico: rappresentazione segnale a tempo discreto e ad ampiezza quantizzata.
 						</div>
 					</div>
-					<div class="columns">
+					<div class="columns fragment">
 						<div class="column">
 							Rappresentazione di un segnale != Segnale
 						</div>
@@ -66,25 +67,29 @@
 					<h2>
 						Analogico vs digitale
 					</h2>
-					<ul>
-						<li>
-							Fotografia analogica: realta' > pellicola > stampa
-						</li>
-						<li>
-							Fotografia digitale: realta' > sensore > stampa
-						</li>
-						<li>
-							Rappresentazione analogica di un segnale digitale
-						</li>
-					</ul>
-					<ul>
-						<li>
-							Si parla di audio analogico quando tutte le rappresentazioni del segnale sono analogiche
-						</li>
-						<li>
-							Si parla di audio digitale quando c'e' almeno un passaggio digitale
-						</li>
-					</ul>
+					<div class="columns fragment">
+						<div class="column">
+							<p>
+								Fotografia analogica: realta' > pellicola > stampa
+							</p>
+							<p>
+								Fotografia digitale: realta' > sensore > stampa
+							</p>
+							<p>
+								Rappresentazione analogica di un segnale digitale
+							</p>
+						</div>
+					</div>
+					<div class="columns fragment">
+						<div class="column">
+							<p>
+								Si parla di audio analogico quando tutte le rappresentazioni del segnale sono analogiche
+							</p>
+							<p>
+								Si parla di audio digitale quando c'e' almeno un passaggio digitale
+							</p>
+						</div>
+					</div>
 				</section>
 
 				<section class="section-title" data-background="#000">
@@ -232,13 +237,21 @@
 						Proprieta' del suono
 					</h2>
 
-					<ul>
-						<li>Intensita'</li>
-						<li>Frequenze</li>
-					</ul>
-
 					<div class="columns">
-						Julia
+						<div class="column">
+							<ul>
+								<li>Intensita'</li>
+								<li>Frequenze</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="columns fragment">
+						<div class="column">
+							<p>
+								(julia)
+							</p>
+						</div>
 					</div>
 
 				</section>
@@ -248,12 +261,19 @@
 						Salvataggio analogico
 					</h2>
 
-					<ul>
-						<li>Nastri magnetici</li>
-						<li>Vinili</li>
-					</ul>
-
 					<div class="columns">
+						<div class="column">
+							<p>
+								Esistono diversi tipi di supporto magnetico
+							</p>
+							<ul>
+								<li>Nastri magnetici</li>
+								<li>Vinili</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="columns fragment">
 						<div class="column">
 							<img class="" src="./img/zoom_1.jpg" alt="">
 						</div>
@@ -278,7 +298,7 @@
 						Introduzione
 					</h2>
 					<p>
-						Nasce per sopperire alle problematiche dell'audio analogico
+						Nasce per sopperire alle problematiche dell'audio analogico, offrendo:
 					</p>
 					<ul>
 						<li>Immunita' al rumore</li>
@@ -292,30 +312,37 @@
 					<h2>
 						Campionamento
 					</h2>
-					<p>
-						Rappresentare un segnale continuo con una serie finita e discreta di punti
-					</p>
-					<p>
-						Piu' punti ci sono, meglio e'!
-					</p>
-					<ul>
-						Julia
-					</ul>
+					<div class="columns">
+						<div class="column">
+							<p>
+								Rappresentare un segnale continuo con una serie finita e discreta di punti
+							</p>
+						</div>
+					</div>
+					
+					<div class="columns fragment">
+						<div class="column">
+							<p>
+								(julia)
+							</p>
+						</div>
+					</div>
 				</section>
 
-				<section>
+				<section data-auto-animate>
 					<h2>
 						Teorema del campionamento di Nyquist-Shannon 
 					</h2>
-					<p>
-						Se campiono un segnale con una frequenza doppia rispetto alla sua frequenza massima, posso riprodurre esattamente il segnale di partenza.
-					</p>
-					<ul>
-						Julia
-					</ul>
+					<div class="columns fragment">
+						<div class="column">
+							<p>
+								Se campiono un segnale con una frequenza doppia rispetto alla sua frequenza massima, posso riprodurre esattamente il segnale di partenza.
+							</p>
+						</div>
+					</div>
 				</section>
 				
-				<section>
+				<section data-auto-animate>
 					<h2>
 						Teorema del campionamento di Nyquist-Shannon 
 					</h2>
@@ -327,9 +354,38 @@
 					<h2>
 						Risoluzione del campionamento 
 					</h2>
-					<p>
-						Se campiono un segnale con una frequenza doppia rispetto alla sua frequenza massima, posso riprodurre esattamente il segnale di partenza.
-					</p>
+					<div class="columns">
+						<div class="column">
+							<p>
+								(julia)
+							</p>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<p>
+								Nei segnali digitali sono limitato in risoluzione
+							</p>
+						</div>
+					</div>
+
+				</section>
+				
+				<section>
+					<h2>
+						Riassuntone dell'audio digitale
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<p>
+								Intensita' -> Risoluzione del campionamento
+							</p>
+							<p>
+								Frequenza -> Frequenza di campionamento
+							</p>
+						</div>
+					</div>
+
 				</section>
 
 				<!-- Audio digitale: Cd -->
@@ -568,11 +624,6 @@
 								<strong>Qualita' CD</strong>
 							</p>
 						</div>
-						<div class="column"> 
-							<p>
-								<strong>Vinile<br>Normale</strong>
-							</p>
-						</div>
 						<div class="column">
 							<p>
 								24bit<br>
@@ -617,6 +668,15 @@
 					</ul>
 				</section>
 
+				<section>
+					<h2>
+						IL problema del digitale 
+					</h2>
+					<img style="height: 400px;" src="./img/bad_sampling.png" alt="">
+
+					
+				</section>
+
 				<!-- Analogico vs digitale -->
 				<section class="section-title" data-background="#000">
 					<h1>
@@ -627,12 +687,26 @@
 				<!-- Pro e contro -->
 				<section>
 					<h2>
+						Analogico vs Digitale
+					</h2>
+
+					<div class="columns">
+						<div class="column">
+							<p>
+								La sfida non e' piu' tra analogico e digitale, ma se avere o meno il controllo della conversione DAC
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>
 						Pro e contro
 					</h2>
 
 					<div class="columns">
 						<div class="column">
-							<h3>Analogico</h3>
+							<h3>Analogico (e simili)</h3>
 							<h4>Pro</h4>
 							<ul>
 								<li>E' un ottimo supporto</li>
@@ -669,17 +743,114 @@
 					
 				</section>
 
+				<section data-auto-animate>
+					<h2>
+						Conclusioni
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<p>
+								Analogico vs Digitale non ha piu' senso (Pink Floyd)
+							</p>
+							<p>
+								La vera questione e' chi si deve occupare della conversione Digitale Analogico
+							</p>
+						</div>
+					</div>
+				</section>
+
 				<!-- Impianti -->
 				<section class="section-title" data-background="#000">
 					<h1>
-						Impianti domestici
+						Impianti audio
 					</h1>
 				</section>
+
+				<section data-auto-animate>
+					<h2>
+						Premesse
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<p>
+								E' meglio != Suona meglio != Mi piace di piu'
+							</p>
+							<p>
+								Esperienza d'ascolto != Qualita' d'ascolto
+							</p>
+							<p>
+								Psicoacustica
+							</p>
+						</div>
+					</div>
+					
+				</section>
+
+				<section data-auto-animate>
+					<h2>
+						Impianto tipico
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<h3>Vinile</h3>
+							<ul>
+								<li>Giradischi (puntina, braccio, magneti)</li>
+								<li>Sezione di amplificazione (preamplificatore, amplificatore, ...)</li>
+								<li>Diffusori (Casse, cuffie...)</li>
+							</ul>
+						</div>
+						<div class="column">
+							<h3>Digitale</h3>
+							<ul>
+								<li>DAC (CD, Usb, musica liquida, ecc)</li>
+								<li>Sezione di amplificazione (preamplificatore, amplificatore, ...)</li>
+								<li>Diffusori (Casse, cuffie...)</li>
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+
+				<section data-auto-animate>
+					<h2>
+						Impianto tipico
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<h3>Generale</h3>
+							<ul>
+								<li>Sorgente</li>
+								<li>Sezione di amplificazione (preamplificatore, amplificatore, ...)</li>
+								<li>Diffusori (Casse, cuffie...)</li>
+							</ul>
+						</div>
+					</div>
+					
+				</section>
+
+				<section>
+					<h2>
+						Risposta in frequenza
+					</h2>
+					<div class="columns">
+						<div class="column">
+							<h3>Cuffie scrause</h3>
+							<img src="./img/bad_hearphone.jpg" alt="">
+
+						</div>
+						<div class="column">
+							<h3>Cuffie buone</h3>
+							<img src="./img/good_hearphone.jpg" alt="">
+						</div>
+					</div>
+					
+				</section>
+
 
 				<!-- Premesse -->
 				<section>
 					<h2>
-						Premesse
+						Osservazioni
 					</h2>
 
 					<ul>
@@ -692,35 +863,119 @@
 
 				<section>
 					<h2>
-						Struttura di un impianto audio
+						Consigli per l'impianto domestico
 					</h2>
 
 					<ul>
-						<li>Alimentatori</li>
-						<li>DAC / Vinile + Testina + Magneti</li>
-						<li>Preamplificatore</li>
-						<li>Amplificatore</li>
-						<li>Cavi</li>
-						<li>Diffusori / Cuffie</li>
+						<li>Minimizzare le conversioni</li>
+						<li>Non ascolto spesso musica in casa, ma quando lo faccio lo fanno anche i miei vicini</li>
+						<li>Ritardare il controllo sul volume</li>
+						<li>Dividere la spesa</li>
+						<li>Valutare componenti integrati / componenti singoli</li>
+						<li>Proteggere l'impianto dagli sbalzi di tensione</li>
+						<li>Ottimizzare il rapporto tra sorgente sonora e impianto (Sennheiser hd 650)</li>
+						<li>Scegliere il proprio genere musicale (estensioni vocali)</li>
+						<li>Imparare a memoria un brano utile</li>
+						<li>Imparare ad apprezzare i propri gusti</li>
+						<li>Fate pace con l'usato</li>
 					</ul>
 					
 				</section>
 
 				<section>
 					<h2>
-						Consigli per l'impianto domestico
+						Consigli pratici
 					</h2>
 
 					<ul>
-						<li>Dividere la spesa</li>
-						<li>Valutare componenti integrati / componenti singoli</li>
-						<li>Proteggere l'impianto dagli sbalzi di tensione</li>
-						<li>Ottimizzare il rapporto tra sorgente sonora e impianto</li>
-						<li>Scegliere il proprio genere musicale</li>
-						<li>Imparare a memoria un brano utile</li>
-						<li>Imparare ad apprezzare i propri gusti</li>
+						<li>DAC portatile per analogico</li>
+						<li>Scheda audio Bluetooth</li>
+
 					</ul>
 					
+				</section>
+
+				<section>
+					<h2>
+						Link utili
+					</h2>
+
+					<div class="columns">
+						<div class="column">
+							<p>
+								Frequenze di tutte le note:
+							<a href="https://pages.mtu.edu/~suits/notefreqs.html">https://pages.mtu.edu/~suits/notefreqs.html</a>
+							</p>
+							<p>
+								Estensioni vocali dei cantanti:
+								<a href="https://www.concerthotels.com/worlds-greatest-vocal-ranges">https://www.concerthotels.com/worlds-greatest-vocal-ranges</a>
+							</p>
+							<p>
+								Approfondimenti sull'elettronica:
+								<a href="http://www.elemania.altervista.org/adda/campionamento/shannon.html">http://www.elemania.altervista.org/adda/campionamento/shannon.html</a>
+							</p>
+							<p>
+								Esperto di audio, specialmente cuffie:
+								<a href="https://www.youtube.com/user/gianjackal">https://www.youtube.com/user/gianjackal</a>
+							</p>
+							<p>
+								Costruttore ed esperto di Hi-fi:
+								<a href="https://www.youtube.com/channel/UC8BDOakf30PaguNmsOXw_EQ">https://www.youtube.com/channel/UC8BDOakf30PaguNmsOXw_EQ</a>
+							</p>
+							<p>
+								Tizio sbruffoncello ma esperto con uno studio di registrazione:
+								<a href="https://www.youtube.com/c/VelutLunaMusic/videos">https://www.youtube.com/c/VelutLunaMusic/videos</a>
+							</p>
+							<p>
+								Negozio di Hi-fi:
+								<a href="https://www.youtube.com/user/sbisa64">https://www.youtube.com/user/sbisa64</a>
+							</p>
+
+						</div>
+					</div>
+					
+				</section>
+
+				<section>
+					<h2>
+						Consigli per gli acquisti
+					</h2>
+
+					<div class="columns">
+						<div class="column">
+							<p>
+								"Ciabatta" per la protezione dell'impianto:
+								<a href="http://acme-biella.com/prodotto/gigawatt-pf-1e/">http://acme-biella.com/prodotto/gigawatt-pf-1e/</a>
+							</p>
+							<p>
+								Ottimo convertitore in/out (grazie a Daniel): 
+								<a href="https://www.thomann.de/it/motu_m2.htm">https://www.thomann.de/it/motu_m2.htm</a>
+							</p>
+							<p>
+								Casse 30 KHz (Cd e Hifi)
+								<a href="https://www.thomann.de/it/yamaha_hs_8.htm">https://www.thomann.de/it/yamaha_hs_8.htm</a>
+							</p>
+							<p>
+								Casse 50 KHz (Master Digitali e vinili)
+								<a href="https://www.thomann.de/it/adam_a5x.htm">https://www.thomann.de/it/adam_a5x.htm</a>
+							</p>
+							<p>
+								Convertitore DAC portatile:
+								<a href="https://www.amazon.it/Audioquest-Dragonfly-Convertitore-Portatile-Nero/dp/B08WSX6QDP/">https://www.amazon.it/Audioquest-Dragonfly-Convertitore-Portatile-Nero/dp/B08WSX6QDP/</a>
+							</p>
+							<p>
+								Scheda audio Bluetooth Hi Fi:
+								<a href="https://www.amazon.it/CREATIVE-Trasmettitore-Bluetooth-Microfono-indicazione/dp/B089S5CY26">https://www.amazon.it/CREATIVE-Trasmettitore-Bluetooth-Microfono-indicazione/dp/B089S5CY26</a>
+							</p>
+						</div>
+					</div>
+					
+				</section>
+
+				<section class="section-title" data-background="#000">
+					<h1>
+						Grazie
+					</h1>
 				</section>
 
 
