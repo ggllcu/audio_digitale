@@ -14,7 +14,7 @@
 
 // Include theme-specific fonts
 
-@import '../../../node_modules/bulma/css/bulma.css';
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 // Override theme settings (see ../template/settings.scss)
